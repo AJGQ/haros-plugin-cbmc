@@ -1,4 +1,6 @@
 %YAML 1.1
+# SPDX-License-Identifier: MIT
+# Copyright © 2021 André Santos
 ---
 name: haros_plugin_cbmc
 version: 0.1.0
@@ -7,6 +9,7 @@ rules:
         name: Counterexample Found
         description: "CBMC found a counterexample."
         tags:
+            - software-model-checking
             - cbmc
-            - ssa
-            - verification
+            - hpl
+            - computation-graph

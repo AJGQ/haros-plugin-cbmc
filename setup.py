@@ -1,4 +1,7 @@
-# PROBABLY NOT FUNCTIONAL, ALMOST A COPY/PASTE
+# -*- coding: utf-8 -*-
+
+# SPDX-License-Identifier: MIT
+# Copyright © 2021 André Santos
 
 try:
     import regex as re
@@ -24,14 +27,14 @@ requirements = [r for r in read('requirements.txt').splitlines() if r]
 setup(
     name             = 'haros-plugin-cbmc',
     version          = __version__,
-    author           = u'',
-    author_email     = '',
-    description      = 'HAROS plugin for CBMC',
+    author           = u'André Santos',
+    author_email     = 'contact.andre.santos@gmail.com',
+    description      = 'HAROS plugin for the CBMC software model checker',
     long_description = read('README.md'),
     long_description_content_type = 'text/markdown',
     license          = 'MIT',
-    keywords         = 'haros ros property-specification verification cbmc',
-    url              = 'https://github.com/AJGQ/haros-plugin-cbmc',
+    keywords         = 'haros ros property-specification software-model-checking cbmc',
+    url              = 'https://github.com/git-afsantos/haros',
     packages         = find_packages(SOURCE),
     package_dir      = {'': SOURCE},
     package_data     = {
@@ -47,7 +50,6 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -58,7 +60,7 @@ setup(
         'Topic :: Software Development :: Quality Assurance'
     ],
     scripts          = [],
-    python_requires  = '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
+    python_requires  = '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*',
     install_requires = requirements,
     extras_require   = {},
     zip_safe         = False
