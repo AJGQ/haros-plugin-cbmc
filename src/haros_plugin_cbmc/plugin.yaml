@@ -1,0 +1,12 @@
+%YAML 1.1
+---
+name: haros_plugin_cbmc
+version: 0.1.0
+rules:
+    counterexample:
+        name: Counterexample Found
+        description: "CBMC found a counterexample."
+        tags:
+            - cbmc
+            - ssa
+            - verification
